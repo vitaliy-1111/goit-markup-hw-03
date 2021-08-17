@@ -29,6 +29,13 @@ body {
   line-height: 1.46;
   letter-spacing: 0.03em;
 }
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
 /* Header */
 /* Logo */
 .logo {
@@ -38,28 +45,21 @@ body {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
-
-  text-decoration: none;
 }
 .logo .accent {
   color: var(--accent-text-color);
 }
 /* Navigation */
-.nav-list {
-  list-style: none;
-}
-.nav-list .link {
+.nav-link {
   color: var(--third-text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
-.nav-list .link:hover,
-.nav-list .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-text-color);
 }
 .nav-list .link.current {
@@ -72,8 +72,6 @@ body {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-
-  text-decoration: none;
 }
 .site-header .mail:hover,
 .site-header .mail:focus,
@@ -125,12 +123,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
-/* Lists from 3 sections */
-.benefits-list,
-.works-list,
-.team-list {
-  list-style: none;
-}
+
 /* Our team section */
 .team-section {
   background-color: var(--secondary-background-color);
@@ -148,10 +141,6 @@ body {
   line-height: 1.1;
 }
 /* Main content portfolio.html */
-.filters-list,
-.projects-list {
-  list-style: none;
-}
 .button-filters {
   color: var(--third-text-color);
   background-color: var(--secondary-background-color);
@@ -187,8 +176,6 @@ body {
 .site-address .mail,
 .site-address .tel {
   color: rgba(0, 0, 0, 0.6); /*rgba(255, 255, 255 ,0.6)*/
-
-  text-decoration: none;
 }
 .site-address .mail:hover,
 .site-address .mail:focus,
