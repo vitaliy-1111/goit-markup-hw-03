@@ -21,6 +21,7 @@
   --accent-text-color: #2196f3;
 }
 body {
+  margin: 0;
   background-color: var(--background-color);
   color: var(--main-text-color);
 
@@ -31,9 +32,18 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
 }
 .link {
   text-decoration: none;
+}
+.conteiner {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Header */
@@ -81,7 +91,17 @@ body {
 }
 /* Main content index.html*/
 /* hero-section */
+.main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .main-title {
+  width: 700px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
   color: grey; /*var(----main-title-color); */
 
   font-weight: 900;
@@ -89,8 +109,16 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .button {
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+
   color: #ffffff;
   background-color: var(--accent-text-color);
 
@@ -108,6 +136,8 @@ body {
 }
 /* Title for 3 sections */
 .secondary-title {
+  margin: 0;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -116,12 +146,26 @@ body {
   text-align: center;
 }
 /* Benefits section */
+/* .benefits-title {
+  visibility: hidden;
+} */
+.benefits-section {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 .benefits-item-title {
+  margin: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+.benefits-text {
+  margin: 0;
+  width: 270px;
 }
 
 /* Our team section */
@@ -129,6 +173,8 @@ body {
   background-color: var(--secondary-background-color);
 }
 .team-item-title {
+  margin: 0;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -136,6 +182,8 @@ body {
   line-height: 1.18;
 }
 .speciality {
+  margin: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
@@ -184,5 +232,6 @@ body {
   color: var(--accent-text-color);
 }
 .location {
+  margin: 0;
   color: black; /*color: var(--secondary-text-color);*/
 }
