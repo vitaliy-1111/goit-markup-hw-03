@@ -38,7 +38,7 @@ body {
 .link {
   text-decoration: none;
 }
-.conteiner {
+.container {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
@@ -116,8 +116,10 @@ body {
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
+  border: none;
   margin-right: auto;
   margin-left: auto;
+  padding: 10px 32px;
 
   color: #ffffff;
   background-color: var(--accent-text-color);
@@ -137,6 +139,7 @@ body {
 /* Title for 3 sections */
 .secondary-title {
   margin: 0;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
 
@@ -167,13 +170,24 @@ body {
   margin: 0;
   width: 270px;
 }
+/* Works section */
+.works-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Our team section */
 .team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-background-color);
+}
+.team-pic {
+  margin-bottom: 30px;
 }
 .team-item-title {
   margin: 0;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
 
@@ -188,8 +202,48 @@ body {
   font-size: 16px;
   line-height: 1.1;
 }
+/* Footer */
+.site-address {
+  font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.site-address .logo {
+  display: block;
+  margin-bottom: 30px;
+}
+.site-address .mail,
+.site-address .tel {
+  display: block;
+  color: rgba(0, 0, 0, 0.6); /*rgba(255, 255, 255 ,0.6)*/
+}
+.site-address .mail:hover,
+.site-address .mail:focus,
+.site-address .tel:hover,
+.site-address .tel:focus {
+  color: var(--accent-text-color);
+}
+.site-address .mail {
+  margin-bottom: 9px;
+}
+.location {
+  margin: 0;
+  margin-bottom: 9px;
+  color: black; /*color: var(--secondary-text-color);*/
+}
+
 /* Main content portfolio.html */
+.project-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .button-filters {
+  margin-bottom: 50px;
+  min-height: 38px;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+
   color: var(--third-text-color);
   background-color: var(--secondary-background-color);
 
@@ -205,6 +259,7 @@ body {
   background-color: var(--accent-text-color);
 }
 .project-item-title {
+  margin: 0;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -213,25 +268,7 @@ body {
   letter-spacing: 0.06em;
 }
 .category {
+  margin: 0;
   font-size: 16px;
   line-height: 1.87;
-}
-
-/* Footer */
-.site-address {
-  font-style: normal;
-}
-.site-address .mail,
-.site-address .tel {
-  color: rgba(0, 0, 0, 0.6); /*rgba(255, 255, 255 ,0.6)*/
-}
-.site-address .mail:hover,
-.site-address .mail:focus,
-.site-address .tel:hover,
-.site-address .tel:focus {
-  color: var(--accent-text-color);
-}
-.location {
-  margin: 0;
-  color: black; /*color: var(--secondary-text-color);*/
 }
