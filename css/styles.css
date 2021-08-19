@@ -47,6 +47,11 @@ body {
 }
 
 /* Header */
+
+.head {
+  display: flex;
+  align-items: center;
+}
 /* Logo */
 .logo {
   color: #000000;
@@ -59,8 +64,25 @@ body {
 .logo .accent {
   color: var(--accent-text-color);
 }
+.page-nav .logo {
+  margin-right: 93px;
+}
 /* Navigation */
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--third-text-color);
 
   font-weight: 500;
@@ -76,17 +98,21 @@ body {
   color: var(--accent-text-color);
 }
 /* mail and telephone in header */
-.site-header .mail,
-.site-header .tel {
+.page-header .mail {
+  margin-left: auto;
+  margin-right: 50px;
+}
+.page-header .mail,
+.page-header .tel {
   color: var(--main-text-color);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
-.site-header .mail:hover,
-.site-header .mail:focus,
-.site-header .tel:hover,
-.site-header .tel:focus {
+.page-header .mail:hover,
+.page-header .mail:focus,
+.page-header .tel:hover,
+.page-header .tel:focus {
   color: var(--accent-text-color);
 }
 /* Main content index.html*/
@@ -156,6 +182,13 @@ body {
   padding-top: 94px;
   padding-bottom: 47px;
 }
+.benefits-list {
+  display: flex;
+}
+/* WhHY&&&&& */
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
 .benefits-item-title {
   margin: 0;
   margin-bottom: 10px;
@@ -175,12 +208,23 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.works-list {
+  display: flex;
+}
+.works-item:not(:last-child) {
+  margin-right: 45px;
+}
 /* Our team section */
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--secondary-background-color);
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-pic {
   margin-bottom: 30px;
@@ -237,6 +281,13 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.filters-list {
+  display: flex;
+  justify-content: center;
+}
+.filters-item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-filters {
   margin-bottom: 50px;
   min-height: 38px;
@@ -253,10 +304,21 @@ body {
 
   cursor: pointer;
 }
+
 .button-filters:hover,
 .button-filters:focus {
   color: #ffffff;
   background-color: var(--accent-text-color);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  width: calc((100%-90px) / 3);
+}
+.project-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
 }
 .project-item-title {
   margin: 0;
