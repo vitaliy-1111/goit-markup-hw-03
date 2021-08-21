@@ -231,7 +231,7 @@ body {
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* background-color: var(--secondary-background-color); */
+  background-color: var(--secondary-background-color);
 }
 .team-list {
   display: flex;
@@ -242,6 +242,7 @@ body {
 .team-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
 }
 .team-item-title {
   margin: 0;
